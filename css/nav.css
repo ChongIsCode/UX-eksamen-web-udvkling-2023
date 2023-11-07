@@ -1,0 +1,111 @@
+header {
+    display: flex;
+    justify-content: space-between;
+}
+header {
+    padding: 1.5rem;
+}
+#navbar > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+#navbar > ul > li > a {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#product_dropdown {
+    margin-top: 1rem;
+    list-style: none;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    
+    gap: 0.5rem;
+}
+#product_dropdown a {
+    font-size: 1.2rem;
+}
+
+#navbar {
+    display: none;
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--bg-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity ease-in-out 0.3s;
+}
+#navbar a {
+    color: var(--text-secondary);
+    text-decoration: none;
+}
+/* Close Navigation */
+#navbar:target {
+    display: flex;
+    opacity: 1;
+    z-index: 1;
+}
+.burger-menu-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+@media only screen and (min-width: 1000px) {
+    #navbar {
+        opacity: 1;
+        position: static;
+        width: unset;
+        height: unset;
+        z-index: 1;
+        background: unset;
+        border-radius: 0.5rem; 
+    }
+    #navbar > ul {
+        flex-direction: row;
+        background: var(--bg-secondary);
+        padding: 1rem;
+        border-radius: 0.5rem;
+    }
+    .burger-menu {
+        display: none;
+    }
+    .burger-menu-close {
+        display: none;
+    }
+    #navbar a {
+        font-family: var(--text-primary);
+    }
+    #navbar > ul > li > a {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    #product_dropdown {
+        background: var(--bg-secondary);
+        width: auto;
+        position: absolute;
+        padding: 0.5rem;
+        border-radius:0 0 0.5rem 0.5rem;
+
+        display: none;
+    }
+    #product_dropdown a{
+        font-size: unset;
+    }
+    ul li a:hover {
+        background: red;
+    }
+    ul li:hover ul#product_dropdown {
+        display: block;
+        
+    }
+}

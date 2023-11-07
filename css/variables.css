@@ -1,3 +1,6 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;600;700&display=swap');
+
 :root {
     /* general colors */
     --bg-primary: #f6f4f1;
@@ -8,5 +11,11 @@
     /* Text color*/
     --text-primary: #000000;
     --text-secondary: #f6f4f1;
+
+    /* Font */
+    --font-primary: 'Red Hat Display', sans-serif;
+
+    /* Shadow */
+    --box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
 }
