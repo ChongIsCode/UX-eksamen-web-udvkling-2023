@@ -1,111 +1,105 @@
 header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
-header {
-    padding: 1.5rem;
-}
-#navbar > ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 1.1rem;
-}
-#navbar > ul > li > a {
-    font-size: 2rem;
-    font-weight: 600;
-}
-
-#product_dropdown {
-    margin-top: 1rem;
-    list-style: none;
-    display: flex;
-    align-items: start;
-    flex-direction: column;
-    
-    gap: 0.5rem;
-}
-#product_dropdown a {
-    font-size: 1.2rem;
-}
-
 #navbar {
-    display: none;
     opacity: 0;
     z-index: -1;
-    position: absolute;
-    top: 0;
+    position: fixed;
+    background: var(--bg-secondary);
     left: 0;
+    top: 0;
     width: 100%;
     height: 100vh;
-    background: var(--bg-secondary);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 1rem;
     transition: opacity ease-in-out 0.3s;
 }
 #navbar a {
     color: var(--text-secondary);
-    text-decoration: none;
 }
-/* Close Navigation */
-#navbar:target {
+#navbar > ul {
     display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+#navbar ul li a{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+#navbar:target {
     opacity: 1;
     z-index: 1;
+    
+    
+}
+#products_nav ul li a{
+    font-size: 1rem;
+    font-weight: unset;
 }
 .burger-menu-close {
     position: absolute;
-    right: 20px;
-    top: 20px;
+    right: 1rem;
+    top: 1rem;
+}
+#navbar li {
+    text-align: center;
+}
+#navbar button {
+    padding: 0.5rem 1rem;
+    background: var(--accent);
+    border: none;
+    color: var(--text-secondary);
+    border-radius: 0.2rem;
+    font-size: 0.8rem;
+    font-weight: 600;
 }
 
 @media only screen and (min-width: 1000px) {
+    header {
+        align-items: center;
+    }
+    .burger-menu, .burger-menu-close, #product_dropdown{
+        display: none;
+    }
     #navbar {
         opacity: 1;
-        position: static;
-        width: unset;
-        height: unset;
         z-index: 1;
-        background: unset;
-        border-radius: 0.5rem; 
-    }
-    #navbar > ul {
+        position: static;
+        display: flex;
+        justify-content: space-between;
         flex-direction: row;
-        background: var(--bg-secondary);
-        padding: 1rem;
-        border-radius: 0.5rem;
-    }
-    .burger-menu {
-        display: none;
-    }
-    .burger-menu-close {
-        display: none;
+        width: 100%;
+        background: none;
+        height: unset;
     }
     #navbar a {
-        font-family: var(--text-primary);
+        color: var(--text-primary);
     }
-    #navbar > ul > li > a {
+    #navbar > ul {
+        margin: 0 auto;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+        box-shadow: var(--box-shadow);
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+    #navbar ul li a{
         font-size: 1rem;
-        font-weight: 600;
-    }
-    #product_dropdown {
-        background: var(--bg-secondary);
-        width: auto;
-        position: absolute;
-        padding: 0.5rem;
-        border-radius:0 0 0.5rem 0.5rem;
-
-        display: none;
-    }
-    #product_dropdown a{
-        font-size: unset;
-    }
-    ul li a:hover {
-        background: red;
-    }
-    ul li:hover ul#product_dropdown {
-        display: block;
         
+    }
+    #navbar button {
+        align-self: center;
+    }
+    #navbar > ul > li:hover {
+        text-decoration: underline;
     }
 }
