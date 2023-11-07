@@ -1,5 +1,21 @@
+@import url(variables.css);
+@import url(cart.css);
+@import url(checkout.css);
+@import url(index.css);
+@import url(products.css);
+@import url(signup.css);
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body {
+    background: var(--bg-primary);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
 }
