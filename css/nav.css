@@ -103,3 +103,9 @@ header {
         text-decoration: underline;
     }
 }
+@media only screen and (min-width: 1200px) {
+    header {
+        padding: 1rem 0;
+    }
+}
+
