@@ -3,13 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/products.js" defer></script>
+    <title>Document</title>
 </head>
 <body>
     <header>
-        <h1>FakeStore Products</h1>
+        <!-- Switch out with logo -->
+        <h3>LOGO</h3>
+            <a class="burger-menu" href="#navbar" aria-label="Open main menu">
+                <!-- switch out with burger menu svg -->
+                <h3>OPEN MENU</h3>
+            </a>
+        <nav id="navbar"> 
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li id="products_nav"><a href="#">Products</a>
+                    <ul id="product_dropdown">
+                        <li><a href="#">Jewlery</a></li>
+                        <li><a href="#">Electronics</a></li>
+                        <li><a href="#">Mens clothing</a></li>
+                        <li><a href="#">Womens clothing</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+            <button>Log out</button>
+            <a class="burger-menu-close" href="#" aria-label="Close main menu">
+                <!-- switch out with burger menu svg -->
+                <h3>CLOSE MENU</h3>
+            </a> 
+        </nav>
     </header>
     <main id="product-list">
         <!-- Product cards will be added here using JavaScript -->

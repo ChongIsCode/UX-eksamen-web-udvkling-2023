@@ -53,11 +53,11 @@ header {
     text-align: center;
 }
 #navbar button {
-    padding: 0.5rem 1rem;
-    background: var(--accent);
+    padding: 0.8rem 1.5rem;
+    background: var(--bg-primary);
     border: none;
-    color: var(--text-secondary);
-    border-radius: 0.2rem;
+    color: var(--text-primary);
+    border-radius: 0.5rem;
     font-size: 1rem;
     font-weight: 600;
 }
@@ -89,8 +89,8 @@ header {
         align-items: center;
         gap: 2rem;
         box-shadow: var(--box-shadow);
-        padding: 1rem;
-        border-radius: 1rem;
+        padding: 1rem 3rem;
+        border-radius: 0.5rem;
     }
     #navbar li {
         text-align: left;
@@ -103,8 +103,9 @@ header {
         align-self: center;
         box-shadow: var(--box-shadow);
     }
-    #navbar > ul > li:hover {
+    #navbar > ul > li:hover, #product_dropdown a:hover {
         text-decoration: underline;
+        text-decoration-color: var(--accent);
     }
     #products_nav:hover #product_dropdown {
         display: flex;
@@ -115,9 +116,6 @@ header {
         background: var(--bg-primary);
         border-radius: 1rem;
         box-shadow: var(--box-shadow);
-    }
-    #product_dropdown a:hover {
-        text-decoration: underline;
     }
 }
 @media only screen and (min-width: 1200px) {
