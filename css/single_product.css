@@ -14,7 +14,7 @@
 #product-image{
     width: auto;
     height: 30rem;
-    background-color: var(--bg-product);
+    background-color: var(--bg-white);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     padding: 2rem;
 }
