@@ -7,6 +7,55 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
+    <header>
+        <!-- Switch out with logo -->
+        <div class="nav-outer-width"><h3>LOGO</h3></div>
+            <a class="burger-menu" href="#navbar" aria-label="Open main menu">
+                <!-- switch out with burger menu svg -->
+                <h3>OPEN MENU</h3>
+            </a>
+        <nav id="navbar"> 
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li id="products_nav"><a href="products.html">Products</a>
+                    <ul id="product_dropdown">
+                        <li><a href="">Jewlery</a></li>
+                        <li><a href="#">Electronics</a></li>
+                        <li><a href="#">Mens clothing</a></li>
+                        <li><a href="#">Womens clothing</a></li>
+                    </ul>
+                </li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+            <div class="nav-outer-width"><button>Log out</button></div>
+            <a class="burger-menu-close" href="#" aria-label="Close main menu">
+                <!-- switch out with burger menu svg -->
+                <h3>CLOSE MENU</h3>
+            </a> 
+        </nav>
+    </header>
+    <main>
+        <section id="cart-details">
+            <div class="cart-sum">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut sit rem dolore magnam praesentium libero suscipit recusandae fuga assumenda. Porro?</p>
+            </div>
+            <div class="divider-line"></div>
+            <div class="cart-products">
+                <article>
+                    <h4>product</h4>
+                    <img src="img/cart-icon.png" alt="Product">
+                </article>
+                <article>
+                    <h4>product</h4>
+                    <img src="img/cart-icon.png" alt="Product">
+                </article>
+                <article>
+                    <h4>product</h4>
+                    <img src="img/cart-icon.png" alt="Product">
+                </article>
+                <button>Checkout</button>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
