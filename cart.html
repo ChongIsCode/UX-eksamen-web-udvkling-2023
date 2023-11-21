@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/cart.js"></script>
   </head>
   <body>
     <header>
@@ -38,21 +39,10 @@
                   <th>PRICE</th>
                 </tr>
                 <!-- create products -->
-                <tr>
-                  <td>
-                      <div class="table-product">
-                          <img class="table-img" src="img/cart-icon.png" alt="">
-                          <p>Mens Casual Premium Slim Fit T-Shirts</p>
-                      </div>
-                  </td>
-                  <td><div class="table-qty">1</div></td>
-                  <td><div class="table-price">$22.3</div></td>
-                </tr>
-                <!-- products created -->
           </table>
       </section>
       <section class="cart-total-section">
-              <p>CART TOTAL <span>$220.3</span></p>
+              <p>CART TOTAL <span id="card-total">$220.3</span></p>
               <button>Checkout</button>
       </section>
   </main>
