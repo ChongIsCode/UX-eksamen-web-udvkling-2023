@@ -17,6 +17,7 @@
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 2rem;
   margin-bottom: 2rem;
+  border-radius: 0.5rem;
 }
 
 #product-info .product-name {
