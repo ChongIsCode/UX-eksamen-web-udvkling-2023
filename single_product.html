@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
     <script src="js/single_product.js" defer></script>
     <title>Product</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <header>
+      <div class="nav-outer-width">
+        <img id="logo" src="img/logo.png" alt="logo" />
+      </div>
+      <a class="burger-menu" href="#navbar" aria-label="Open main menu">
+        <!-- switch out with burger menu svg -->
+        <h3>☰</h3>
+      </a>
+      <nav id="navbar">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li id="products_nav"><a href="products.html">Products</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+        <div class="nav-outer-width"><button>Log out</button></div>
+        <a class="burger-menu-close" href="#" aria-label="Close main menu">
+          <!-- switch out with burger menu svg -->
+          <h3>X</h3>
+        </a>
+      </nav>
+    </header>
+
     <main>
-        <section id="single-product-grid">
-        <div class="product" id="product-image">
- 
-        </div>
-        <div class="product" id="product-info">
- 
-        </div>
-        </section>
- 
-        <div class="product" id="product-extra">
- 
-        </div>
+      <section id="single-product-grid">
+        <div class="product" id="product-image"></div>
+        <div class="product" id="product-info"></div>
+        <div class="product" id="product-extra"></div>
+      </section>
     </main>
-    
-</body>
+  </body>
 </html>

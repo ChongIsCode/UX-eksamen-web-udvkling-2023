@@ -1,47 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/home.js" defer></script>
+  </head>
+  <body>
     <header>
-        <!-- Switch out with logo -->
-        <div class="nav-outer-width"><h3>LOGO</h3></div>
-            <a class="burger-menu" href="#navbar" aria-label="Open main menu">
-                <!-- switch out with burger menu svg -->
-                <h3>OPEN MENU</h3>
-            </a>
-        <nav id="navbar"> 
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li id="products_nav"><a href="products.html">Products</a>
-                    <ul id="product_dropdown">
-                        <li><a href="">Jewlery</a></li>
-                        <li><a href="#">Electronics</a></li>
-                        <li><a href="#">Mens clothing</a></li>
-                        <li><a href="#">Womens clothing</a></li>
-                    </ul>
-                </li>
-                <li><a href="cart.html">Cart</a></li>
-            </ul>
-            <div class="nav-outer-width"><button>Log out</button></div>
-            <a class="burger-menu-close" href="#" aria-label="Close main menu">
-                <!-- switch out with burger menu svg -->
-                <h3>CLOSE MENU</h3>
-            </a> 
-        </nav>
+      <div class="nav-outer-width">
+        <img id="logo" src="img/logo.png" alt="logo" />
+      </div>
+      <a class="burger-menu" href="#navbar" aria-label="Open main menu">
+        <!-- switch out with burger menu svg -->
+        <h3>☰</h3>
+      </a>
+      <nav id="navbar">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li id="products_nav"><a href="products.html">Products</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+        <div class="nav-outer-width"><button>Log out</button></div>
+        <a class="burger-menu-close" href="#" aria-label="Close main menu">
+          <!-- switch out with burger menu svg -->
+          <h3>X</h3>
+        </a>
+      </nav>
     </header>
-    
-    <main>
-        <h1>h1</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, 
-            adipisicing elit. Sit, 
-            possimus enim officia suscipit nulla quo 
-            aperiam eaque dolor laborum aliquam!
+
+    <main id="home-top">
+      <section>
+        <h1>EXPLORE A WORLD OF ITEMS</h1>
+        <hr />
+        <p>
+          We sell a stunning collection of clothes, cutting-edge electronics,
+          and exquisite jewelry to elevate your lifestyle.
         </p>
+      </section>
+      <section>
+        <img src="img/forside_img.png" alt="" />
+      </section>
     </main>
-</body>
+
+    <main class="h2">
+      <h2>Gode deals på udvalgte varer:</h2>
+    </main>
+
+    <main id="product-list-home">
+      <!-- Product cards will be added here using JavaScript -->
+    </main>
+  </body>
 </html>

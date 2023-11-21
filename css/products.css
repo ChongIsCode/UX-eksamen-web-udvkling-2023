@@ -4,7 +4,7 @@
     justify-content: center;
 }
  
-.product-card {
+#product-list .product-card {
     border-style: none;
     border-radius: 0.5rem;
     margin: 1rem;
@@ -17,13 +17,13 @@
     position: relative;
 }
  
-.product-image {
+#product-list .product-image {
     width: 100%;
     height: 20rem;
     object-fit: contain;
 }
  
-.product-title {
+#product-list .product-title {
     font-weight: 100;
     margin: 1rem;
     white-space: nowrap;
@@ -31,13 +31,13 @@
     text-overflow: ellipsis;
 }
  
-.product-price {
+#product-list .product-price {
     color: var(--text-primary);
     font-weight: bold;
     
 }
  
-.cart-icon{
+#product-list .cart-icon{
     width: 8%;
     right: 1rem;
     position: absolute;

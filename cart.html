@@ -1,40 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
     <header>
-        <!-- Switch out with logo -->
-        <div class="nav-outer-width"><h3>LOGO</h3></div>
-            <a class="burger-menu" href="#navbar" aria-label="Open main menu">
-                <!-- switch out with burger menu svg -->
-                <h3>OPEN MENU</h3>
-            </a>
-        <nav id="navbar"> 
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li id="products_nav"><a href="products.html">Products</a>
-                    <ul id="product_dropdown">
-                        <li><a href="">Jewlery</a></li>
-                        <li><a href="#">Electronics</a></li>
-                        <li><a href="#">Mens clothing</a></li>
-                        <li><a href="#">Womens clothing</a></li>
-                    </ul>
-                </li>
-                <li><a href="cart.html">Cart</a></li>
-            </ul>
-            <div class="nav-outer-width"><button>Log out</button></div>
-            <a class="burger-menu-close" href="#" aria-label="Close main menu">
-                <!-- switch out with burger menu svg -->
-                <h3>CLOSE MENU</h3>
-            </a> 
-        </nav>
+      <div class="nav-outer-width">
+        <img id="logo" src="img/logo.png" alt="logo" />
+      </div>
+      <a class="burger-menu" href="#navbar" aria-label="Open main menu">
+        <!-- switch out with burger menu svg -->
+        <h3>☰</h3>
+      </a>
+      <nav id="navbar">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li id="products_nav"><a href="products.html">Products</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+        <div class="nav-outer-width"><button>Log out</button></div>
+        <a class="burger-menu-close" href="#" aria-label="Close main menu">
+          <!-- switch out with burger menu svg -->
+          <h3>X</h3>
+        </a>
+      </nav>
     </header>
-    <main>
-    </main>
-</body>
+
+    <main id="cart-page">
+      <section>
+          <table class="cart-table">
+              <tr>
+                  <th>PRODUCT</th>
+                  <th>QTY.</th>
+                  <th>PRICE</th>
+                </tr>
+                <!-- create products -->
+                <tr>
+                  <td>
+                      <div class="table-product">
+                          <img class="table-img" src="img/cart-icon.png" alt="">
+                          <p>Mens Casual Premium Slim Fit T-Shirts</p>
+                      </div>
+                  </td>
+                  <td><div class="table-qty">1</div></td>
+                  <td><div class="table-price">$22.3</div></td>
+                </tr>
+                <!-- products created -->
+          </table>
+      </section>
+      <section class="cart-total-section">
+              <p>CART TOTAL <span>$220.3</span></p>
+              <button>Checkout</button>
+      </section>
+  </main>
+  </body>
 </html>
