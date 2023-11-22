@@ -16,8 +16,9 @@
 }
 .cart-table .table-img {
     max-width: 100px;
+    max-height: 100px;
     padding: 1rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.1rem;
     box-shadow: var(--box-shadow);
     background: var(--bg-white);
     width: fit-content;
@@ -40,6 +41,7 @@
     padding: 1rem;
     border-radius: 0.5rem;
     min-height: 200px;
+    max-height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -34,7 +34,7 @@ a {
   color: var(--font-primary);
 }
 
-.cart-icon {
+.cart-icon, button {
   cursor: pointer;
 }
 
