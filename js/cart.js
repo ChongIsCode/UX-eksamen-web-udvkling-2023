@@ -37,5 +37,7 @@ function goToCheckout() {
         alert("You need products in your cart to proceed to checkout");
         return;
     }
+    // save the sum in localstorage for checkout
+    localStorage.setItem("cart Sum", cart_sum);
     window.location.href = "checkout.html";
 }

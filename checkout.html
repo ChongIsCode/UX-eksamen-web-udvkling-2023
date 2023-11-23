@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/checkout.js"></script>
   </head>
   <body>
     <header>
@@ -28,5 +29,70 @@
         </a>
       </nav>
     </header>
+
+    <main id="checkout-page">
+      <section>
+        <h1>Checkout</h1>
+        <form>
+          <div class="delivery-container">
+            <h2>Delivery Address</h2>
+            <div class="field-comtainer primary-field">
+              <label for="">Street Name</label>
+              <input type="text">
+            </div>
+            <div class="combined-fields">
+              <div class="field-comtainer">
+                <label for="">Postal Code</label>
+                <input type="number">
+              </div>
+              <div class="field-comtainer">
+                <label for="">Town/City</label>
+                <input type="text">
+              </div>
+            </div>
+          </div>
+          <div class="billing-container">
+            <h2>Billing Address</h2>
+            <div class="field-comtainer primary-field">
+              <label for="">Street Name</label>
+              <input type="text">
+            </div>
+            <div class="combined-fields">
+              <div class="field-comtainer">
+                <label for="">Postal Code</label>
+                <input type="number">
+              </div>
+              <div class="field-comtainer">
+                <label for="">Town/City</label>
+                <input type="text">
+              </div>
+            </div>
+          </div>
+          <div class="card-container">
+            <h2>Card Details</h2>
+            <div class="field-comtainer primary-field">
+              <label for="">Card Number</label>
+              <input type="text">
+            </div>
+            <div class="combined-fields">
+              <div class="field-comtainer">
+                <label for="">Expiration date</label>
+                <input type="month">
+              </div>
+              <div class="field-comtainer">
+                <label for="">CVC</label>
+                <input type="number">
+              </div>
+            </div>
+          </div>
+          <div class="order-summary">
+            <h3>Order Summary</h3>
+            <p class="delivery-cost">Delivery cost: $5</p>
+            <p>Total <span class="total-cost">$0</span></p>
+          </div>
+          <button id="purchase-btn">Finish Purchase</button>
+        </form>
+      </section>
+    </main>
   </body>
 </html>

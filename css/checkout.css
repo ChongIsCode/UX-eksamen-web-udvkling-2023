@@ -1,0 +1,73 @@
+#checkout-page {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+#checkout-page section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: var(--box-shadow);
+    background: var(--bg-white);
+    border-radius: 0.5rem;
+    padding: 2rem 5rem;
+}
+#checkout-page h1 {
+    margin-bottom: 3rem;
+}
+#checkout-page label {
+    display: block;
+    margin-bottom: 0.3rem;
+}
+.delivery-container, .billing-container, .card-container {
+    margin-bottom: 2rem;
+}
+#checkout-page h2 {
+    margin-bottom: 0.5rem;
+}
+.primary-field {
+    margin-bottom: 0.5rem;
+}
+.combined-fields {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+.field-comtainer input {
+    border: none;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+}
+
+.card-container .primary-field input{
+    width: 100%;
+}
+
+.order-summary {
+    margin-bottom: 2rem;
+}
+.delivery-cost {
+    opacity: 0.8;
+}
+
+
+.total-cost {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+#checkout-page button {
+    padding: 0.8rem 1.5rem;
+    background: var(--accent);
+    border: none;
+    color: var(--text-secondary);
+    box-shadow: var(--box-shadow);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+@media only screen and (min-width: 500px) {
+    .combined-fields {
+        flex-direction: row;
+    }
+}
