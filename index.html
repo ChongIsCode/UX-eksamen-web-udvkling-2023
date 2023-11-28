@@ -3,10 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/login.js" defer></script>
+    <title>Login</title>
 </head>
-<body>
-    
+<body>  
+<main id="login-page">
+    <div class="inputForm">
+      <h1 id="title">Login</h1>
+      <form>
+        <div id="inputName">
+        <label for="Email">Email</label>
+        <input id="email" type="email" placeholder="Email" required>
+        </div>
+        <div id="inputPwd">
+        <label for="password">Password</label>
+        <input id="pwd" type="password" placeholder="Password" required>
+      </div>
+      <div id="login-btn">
+        <input id="submitEmail" type="submit" value="Login">
+      </div>
+      <div id="newuser">
+        <p>Don´t have a user already? Create a user <span id="signup-page-btn"><a href="signup.html">here</span></a></p>
+      </div>
+    </form>
+    </div>
+</main>
 </body>
 </html>

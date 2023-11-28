@@ -1,0 +1,103 @@
+#signup-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#signup-page form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.inputForm{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-primary);
+    box-shadow: var(--box-shadow);
+    width: 500px;
+    height: 500px;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+#inputName, #inputPwd_1, #inputPwd_2{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-top: 2rem;
+}
+#inputName input, #inputPwd_1 input, #inputPwd_2 input {
+    width: 15rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+    border-style: none;  
+    padding-left: 0.3rem;  
+}
+input::placeholder{
+    text-align: start;
+}
+#pwd{
+    width: 250px;
+    padding: 8px;
+    margin-right: 10px;
+}
+#signup-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 1rem;
+}
+#signup-btn input{
+    width: 5rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    border-style: none;
+    background-color: var(--accent);
+    color: var(--text-secondary);
+}
+#message{
+    display: none;
+    background: var(--bg-primary);
+    position: absolute;
+    padding: 1rem;
+    margin-top: 1rem;
+    height: auto;
+}
+#message p{
+    padding: 1rem 1rem;
+    font-size: 1rem;
+}
+.valid {
+    color: green;
+}
+  
+.valid:before {
+    position: relative;
+    left: -20px;
+    content: "✔";
+}
+  /* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+    color: red;
+}
+.invalid:before {
+    position: relative;
+    left: -20px;
+    content: "✖";
+}
+#alreadyuser{
+    margin-top: 2rem;
+}
+
+#login-btn {
+    display: inline;
+    text-decoration: underline;
+}

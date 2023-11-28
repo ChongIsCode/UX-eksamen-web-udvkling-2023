@@ -3,10 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/signup.js" defer></script>
+    <title>Signup</title>
 </head>
-<body>
-    
+<body>  
+  <main id="signup-page">
+    <div class="inputForm">
+      <h1 id="title">Signup</h1>
+      <form id="signupForm" onsubmit="return checkPassword(this)">
+        <div id="inputName">
+        <label for="Email">Email</label>
+        <input id="email" type="email" placeholder="Email" required>
+        </div>
+        <div id="inputPwd_1">
+        <label for="passwordInput">Password</label>
+        <input id="pwd" type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Password" required>
+      </div>
+      <div id="inputPwd_2">
+        <label for="confirmPasswordInput">Confirm Password</label>
+        <input id="pwd_2" type="password" name="confirmPassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Confirm password" required>
+      </div>
+      <!-- <button type="button" onclick="validatePasswords()">Validate Passwords</button> -->
+    <div id="signup-btn">
+      <a href="./home.htm"><input id="submitEmail" type="submit" value="Signup"></input></a>
+    </div>
+    <div id="message">
+    <h3>Password must contain the following:</h3>
+    <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+    <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+    <p id="number" class="invalid">A <b>number</b></p>
+    <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+  </div>
+    <div id="alreadyuser">
+      <p>Already have a user? Log in <span id="login-btn"><a href="index.html">here</a></span></p>
+    </div>
+    </form>
+  <!-- <div id="validationResult"></div> -->
+    </div>
+  </main>
 </body>
 </html>
+<!-- <button id="removeName" type="submit">Remove</button> -->
