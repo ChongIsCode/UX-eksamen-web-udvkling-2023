@@ -37,6 +37,41 @@ a {
   cursor: pointer;
 }
 
+footer {
+  background-color: var(--bg-secondary);
+  color: var(--text-secondary);
+  padding: 2rem;
+  margin-top: 7rem;
+
+}
+ 
+footer address {
+  height: 10rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+ 
+footer h3 {
+  margin-top: 1rem;
+}
+ 
+@media only screen and (min-width: 1000px) {
+  footer address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+  }
+}
+
+.front-header {
+  margin-bottom: 0;
+  display: block;
+}
+header .front-logo {
+  position: absolute;
+}
+
 @media only screen and (min-width: 1200px) {
   main {
     max-width: 1200px;
